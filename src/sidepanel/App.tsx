@@ -356,7 +356,7 @@ function App() {
           const credits = await client.getCredits();
           setRemainingCredits(credits.remaining);
         } catch (error) {
-          console.warn("Sidepanel AI: Failed to refresh credits", error);
+          console.warn("Openrouter Panel: Failed to refresh credits", error);
         }
         setLoading(false);
         return;
@@ -446,7 +446,7 @@ function App() {
         const credits = await client.getCredits();
         setRemainingCredits(credits.remaining);
       } catch (error) {
-        console.warn("Sidepanel AI: Failed to refresh credits", error);
+        console.warn("Openrouter Panel: Failed to refresh credits", error);
       }
     } catch (error: any) {
       setMessages((prev) => [
@@ -498,7 +498,7 @@ function App() {
         const error = e?.error;
         if (error === "not-allowed") {
           setSttError(
-            "Microphone access is blocked. Visit chrome://settings/content/microphone and allow Sidepanel AI, then reload the extension."
+            "Microphone access is blocked. Visit chrome://settings/content/microphone and allow Openrouter Panel, then reload the extension."
           );
         } else if (error === "service-not-allowed") {
           setSttError("Speech service blocked. Check Chrome's site settings.");
@@ -1343,7 +1343,7 @@ function App() {
                 <div>Open extension: Click the toolbar icon.</div>
                 <div>
                   Set your own shortcut: chrome://extensions/shortcuts →
-                  "Sidepanel AI".
+                  "Openrouter Panel".
                 </div>
                 <div>Send message: Enter</div>
               </div>

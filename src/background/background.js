@@ -1,4 +1,4 @@
-// Sidepanel AI Background Service Worker
+// Openrouter Panel Background Service Worker
 
 class TabContextManager {
   constructor() {
@@ -1871,7 +1871,7 @@ async function seedPromptAndOpenSidepanel(promptText, windowId) {
 
 // Sidepanel management + context menu creation
 chrome.runtime.onInstalled.addListener(() => {
-  console.log("Sidepanel AI extension installed");
+  console.log("Openrouter Panel extension installed");
   try {
     chrome.contextMenus.create({
       id: "sidepanel_ai_ask_page",

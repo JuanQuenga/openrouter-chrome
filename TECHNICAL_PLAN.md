@@ -1,8 +1,8 @@
-# Sidepanel AI - Technical Plan
+# Openrouter Panel - Technical Plan
 
 ## Project Overview
 
-Sidepanel AI is a Chrome extension that provides an AI-powered chat interface in the browser's sidepanel. The extension intelligently accesses and utilizes context from all open tabs to enhance AI conversations through OpenRouter.ai, enabling web automation capabilities.
+Openrouter Panel is a Chrome extension that provides an AI-powered chat interface in the browser's sidepanel. The extension intelligently accesses and utilizes context from all open tabs to enhance AI conversations through OpenRouter.ai, enabling web automation capabilities.
 
 ### Key Features
 
@@ -61,7 +61,7 @@ Sidepanel AI is a Chrome extension that provides an AI-powered chat interface in
 ```json
 {
   "manifest_version": 3,
-  "name": "Sidepanel AI",
+  "name": "Openrouter Panel",
   "version": "1.0.0",
   "permissions": [
     "sidePanel",
@@ -92,7 +92,7 @@ Sidepanel AI is a Chrome extension that provides an AI-powered chat interface in
   ],
   "commands": {
     "open_sidepanel": {
-      "description": "Open Sidepanel AI"
+      "description": "Open Openrouter Panel"
     },
     "summarize_page": {
       "description": "Summarize current page"
@@ -184,7 +184,7 @@ class OpenRouterClient {
         Authorization: `Bearer ${this.apiKey}`,
         "Content-Type": "application/json",
         "HTTP-Referer": chrome.runtime.getURL(""),
-        "X-Title": "Sidepanel AI",
+        "X-Title": "Openrouter Panel",
       },
       body: JSON.stringify(payload),
     });

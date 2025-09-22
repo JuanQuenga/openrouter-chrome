@@ -1,4 +1,4 @@
-// Sidepanel AI Content Script
+// Openrouter Panel Content Script
 // This script runs on all web pages to extract context and enable interactions
 
 function isRuntimeAvailable() {
@@ -46,7 +46,7 @@ class TabContextExtractor {
                   sendResponse({ error: "Unknown action" });
               }
             } catch (error) {
-              console.warn("Sidepanel AI: Error handling message:", error);
+              console.warn("Openrouter Panel: Error handling message:", error);
               sendResponse({ error: "Internal error" });
             }
             return true;

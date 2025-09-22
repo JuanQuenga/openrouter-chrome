@@ -1,4 +1,4 @@
-// OpenRouter API Client for Sidepanel AI
+// OpenRouter API Client for Openrouter Panel
 
 class OpenRouterClient {
   constructor(apiKey) {
@@ -44,7 +44,7 @@ class OpenRouterClient {
         Authorization: `Bearer ${this.apiKey}`,
         "Content-Type": "application/json",
         "HTTP-Referer": chrome.runtime.getURL(""),
-        "X-Title": "Sidepanel AI",
+        "X-Title": "Openrouter Panel",
       },
       body: JSON.stringify(payload),
     });
@@ -95,7 +95,7 @@ class OpenRouterClient {
         Authorization: `Bearer ${this.apiKey}`,
         "Content-Type": "application/json",
         "HTTP-Referer": chrome.runtime.getURL(""),
-        "X-Title": "Sidepanel AI",
+        "X-Title": "Openrouter Panel",
       },
       body: JSON.stringify(payload),
     });
@@ -151,7 +151,7 @@ class OpenRouterClient {
         Authorization: `Bearer ${this.apiKey}`,
         "Content-Type": "application/json",
         "HTTP-Referer": chrome.runtime.getURL(""),
-        "X-Title": "Sidepanel AI",
+        "X-Title": "Openrouter Panel",
       },
     });
     if (!response.ok) {
